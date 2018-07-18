@@ -1,0 +1,60 @@
+<script>
+// Create an array of words
+var words = [
+"javascript",
+"monkey",
+"amazing",
+"pancake"
+];
+// Pick a random word
+var word = pickWord();
+// Set up the answer array
+var setupAnswerArray(word);
+for (var i = 0; i < word.length; i++) {
+answerArray[i] = "_";
+}
+var remainingLetters = word.length;
+// The game loop
+while (remainingLetters > 0) {
+// Show the player their progress
+setupAnswerArray(word);
+// Get a guess from the player
+var guess = getGuess();
+if (guess === null) {
+break;
+} else if (guess.length !== 1) {
+alert("Please enter a single letter.");
+} else {
+// Update the game state with the guess
+var correctGuesses = updateGameState(guess, word, answerArray);
+remainingLetters -= correctGuesses;
+}
+}
+}
+// The end of the game loop
+}
+// Show the answer and congratulate the player
+showAnswerAndCongratulatePlayer(answerArray);
+alert("Good job! The answer was " + word);
+
+var pickWord = function () {
+
+};
+var setupAnswerArray = function (word) {
+
+};
+var showPlayerProgress = function (answerArray) {
+
+};
+var getGuess = function () {
+
+};
+var updateGameState = function (guess, word, answerArray) {
+
+};
+var showAnswerAndCongratulatePlayer = function (answerArray) {
+
+};
+</script>
+</body>
+</html>
