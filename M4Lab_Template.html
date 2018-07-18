@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="200"></canvas>
+
+    <script>
+	// M4LAB_Template
+	// WEB 151
+	// David Howland
+	
+	
+	// get the canvas
+    var canvas = document.getElementById("canvas");
+	// get the context as 2d
+    var ctx = canvas.getContext("2d");
+	// actually draw
+    
+	// example:
+	// draw a square in the top left
+	ctx.fillRect(90,10, 50, 50);
+	ctx.fillRect(110,60,10, 10);
+	ctx.fillRect(110,70,10,10);
+	ctx.fillRect(50,80,130,10);
+	ctx.fillRect(80,90,70,10);
+	ctx.fillRect(80,100,70,10);
+	ctx.fillRect(80,110,70,10);
+	ctx.fillRect(80,120,70,10);
+	ctx.fillRect(80,130,70,10);
+	ctx.fillRect(80,140,70,10);
+	ctx.fillRect(80,150,70,10);
+	ctx.fillRect(80,160,10,10);
+	ctx.fillRect(80,170,10,10);
+	ctx.fillRect(80,180,10,10);
+	ctx.fillRect(80,190,10,10);
+	ctx.fillRect(140,160,10,10);
+	ctx.fillRect(140,170,10,10);
+	ctx.fillRect(140,180,10,10);
+	ctx.fillRect(140,190,10,10);
+	
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "Red";
+ctx.fillRect(250, 0, 50, 100);	
+ctx.fillStyle = "Green";
+ctx.fillRect(300, 0, 50, 100);
+ctx.fillStyle = "Blue";
+ctx.fillRect(350, 0, 50, 100);
+
+	
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokestyle = "Black";	
+ctx.strokeRect(450,10,10,50);
+ctx.strokeRect(500,10,10,50);
+ctx.strokeRect(450,50,60,10);
+ctx.strokeRect(450,10,60,10);
+ctx.fillstyle = "Black";
+ctx.strokeRect(475,60,10,20);
+ctx.strokeRect(475,70,10,20);
+ctx.strokeRect(475,80,10,20);
+ctx.strokeRect(475,90,10,20);
+ctx.strokeRect(475,100,10,20);
+
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle = "Black";
+ctx.lineWidth = 7;
+ctx.beginPath();
+ctx.moveTo(500,80);
+ctx.lineTo(485,120)
+ctx.moveTo(455,80);
+ctx.lineTo(475,120);
+ctx.stroke();
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle = "Black";
+ctx.lineWidth = 7;
+ctx.beginPath();
+ctx.moveTo(500,180);
+ctx.lineTo(485,120)
+ctx.moveTo(455,180);
+ctx.lineTo(475,120);
+ctx.stroke();
+
+
+ctx.lineWidth = 4;
+
+ctx.strokeStyle = "Black";
+circle(100,100,10);
+
+
+
+    </script>
+</body>
+</html>
